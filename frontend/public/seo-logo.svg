@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    circle, line, path, text {
+      stroke: #4f46e5;
+    }
+    text {
+      fill: #4f46e5;
+    }
+    @media (prefers-color-scheme: dark) {
+      circle, line, path, text {
+        stroke: #818cf8;
+      }
+      text {
+        fill: #818cf8;
+      }
+    }
+  </style>
+  
+  <!-- Magnifying Glass -->
+  <circle cx="40" cy="40" r="20" fill="none" stroke-width="8"/>
+  <line x1="55" y1="55" x2="80" y2="80" stroke-width="8" stroke-linecap="round"/>
+  
+  <!-- Fun Eyes -->
+  <circle cx="35" cy="35" r="5" fill="#4f46e5"/>
+  <circle cx="45" cy="35" r="5" fill="#4f46e5"/>
+  
+  <!-- Smile -->
+  <path d="M30 45 Q40 55 50 45" fill="none" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- SEO Text -->
+  <text x="20" y="95" font-size="20" font-weight="bold">SEO</text>
+</svg> 
