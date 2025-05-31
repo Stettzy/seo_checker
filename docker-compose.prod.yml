@@ -23,8 +23,8 @@ services:
     image: nginx:alpine
     restart: unless-stopped
     ports:
-      - "80:80"
-      - "443:443"
+      - "8080:8080"
+      - "8443:8443"
     volumes:
       - ./nginx/conf:/etc/nginx/conf.d
       - ./certbot/conf:/etc/letsencrypt
