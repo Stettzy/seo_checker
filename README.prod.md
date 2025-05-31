@@ -4,22 +4,17 @@ This branch contains the production configuration for deploying SEOBuddy to your
 
 ## Prerequisites
 
-1. Build the frontend and backend locally:
+1. Build the frontend locally:
 
 ```bash
 # Build frontend
 cd frontend
 npm install
 npm run build
-
-# Build backend
-cd ../backend
-go build -o main
 ```
 
 2. Make sure you have the following files ready:
    - `frontend/dist/` directory (from frontend build)
-   - `backend/main` binary (from backend build)
 
 ## Deployment
 
@@ -47,7 +42,8 @@ docker compose -f docker-compose.prod.yml up -d
 
 ## Notes
 
-- The production setup assumes you've already built the frontend and backend locally
+- The frontend is pre-built locally and served as static files
+- The backend is built automatically during Docker image creation
 - SSL certificates will auto-renew every 12 hours
 - Nginx configuration includes security headers and optimizations
 - Both frontend and backend are served behind Nginx reverse proxy 
